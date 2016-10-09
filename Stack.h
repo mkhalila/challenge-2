@@ -3,8 +3,11 @@
 
 #include "vector.h"
 #include <string>
+#include <sstream>
+#include <iterator>
 using pep::vector;
 using std::string;
+using std::istringstream;
 
 // TODO: Your code for question 3 goes here
 class Stack {
@@ -27,7 +30,22 @@ public:
 	}
 };
 
-double evaluate(const string & rpn) {}
+vector<string> toTokens(const string & s) {
+	vector<string> tokens;
+
+    istringstream iss(s);
+    do {
+        string sub;
+        iss >> sub;
+        tokens.push_back(sub);
+    } while (iss);
+
+    return tokens;
+}
+
+double evaluate(const string & rpn) {
+	
+}
 
 
 // Do not write anything below this line
