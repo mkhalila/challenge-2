@@ -45,6 +45,7 @@ vector<string> toTokens(const string & s) {
 }
 
 double evaluate(const string & rpn) {
+	Stack stack;
 	const vector<string> & tokens = toTokens(rpn);
 
 	for (int i = 0; i < tokens.size(); ++i) {
