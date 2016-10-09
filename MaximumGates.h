@@ -24,6 +24,8 @@ int maximumGates(const vector<int> & arrives, const vector<int> & departs) {
 		}
 		if (gates > maxGates) maxGates = gates;
 	}
+
+	return maxGates;
 }
 
 // Do not write any code below this line
