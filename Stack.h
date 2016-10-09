@@ -38,7 +38,7 @@ vector<string> toTokens(const string & s) {
     do {
         string token;
         iss >> token;
-        tokens.push_back(token);
+        if (token != "") tokens.push_back(token);
     } while (iss);
 
     return tokens;
