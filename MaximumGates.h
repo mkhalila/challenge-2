@@ -16,6 +16,14 @@ int getLatestDepart(const vector<int> & departs) {
 int maximumGates(const vector<int> & arrives, const vector<int> & departs) {
 	int gates = 0;
 	int maxGates = 0;
+
+	for (int i = 0; i < getLatestDepart(departs); ++i) {
+		for (int i = 0; i < arrives.size(); ++i) {
+			if (i == arrives[i]) {
+				++gates;
+			}
+		}
+	}
 }
 
 // Do not write any code below this line
