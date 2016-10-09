@@ -8,6 +8,7 @@
 using pep::vector;
 using std::string;
 using std::istringstream;
+using std::stod;
 
 // TODO: Your code for question 3 goes here
 class Stack {
@@ -47,10 +48,11 @@ double evaluate(const string & rpn) {
 	const vector<string> & tokens = toTokens(rpn);
 
 	for (int i = 0; i < tokens.size(); ++i) {
-		if (token[i] == "+") stack.push(stack.pop() + stack.pop());
-		if (token[i] == "-") stack.push(stack.pop() - stack.pop());
-		if (token[i] == "*") stack.push(stack.pop() * stack.pop());
-		if (token[i] == "/") stack.push(stack.pop() / stack.pop());
+		if (tokens[i] == "+") stack.push(stack.pop() + stack.pop());
+		if (tokens[i] == "-") stack.push(stack.pop() - stack.pop());
+		if (tokens[i] == "*") stack.push(stack.pop() * stack.pop());
+		if (tokens[i] == "/") stack.push(stack.pop() / stack.pop());
+		else stack.push(stod(tokens[i]));
 	}
 }
 
