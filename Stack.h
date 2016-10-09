@@ -8,6 +8,13 @@ using pep::vector;
 class Stack {
 private:
 	vector<double> stack; 
+
+public:
+	bool empty() const {}
+
+	double pop() {}
+
+	void push(const double & toPush) {}
 };
 
 
