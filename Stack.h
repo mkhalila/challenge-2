@@ -35,16 +35,16 @@ vector<string> toTokens(const string & s) {
 
     istringstream iss(s);
     do {
-        string sub;
-        iss >> sub;
-        tokens.push_back(sub);
+        string token;
+        iss >> token;
+        tokens.push_back(token);
     } while (iss);
 
     return tokens;
 }
 
 double evaluate(const string & rpn) {
-	
+	const vector<string> & tokens = toTokens(rpn);
 }
 
 
