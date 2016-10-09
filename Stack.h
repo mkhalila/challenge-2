@@ -45,6 +45,13 @@ vector<string> toTokens(const string & s) {
 
 double evaluate(const string & rpn) {
 	const vector<string> & tokens = toTokens(rpn);
+
+	for (int i = 0; i < tokens.size(); ++i) {
+		if (token[i] == "+") stack.push(stack.pop() + stack.pop());
+		if (token[i] == "-") stack.push(stack.pop() - stack.pop());
+		if (token[i] == "*") stack.push(stack.pop() * stack.pop());
+		if (token[i] == "/") stack.push(stack.pop() / stack.pop());
+	}
 }
 
 
