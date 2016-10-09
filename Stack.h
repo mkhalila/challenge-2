@@ -50,9 +50,9 @@ double evaluate(const string & rpn) {
 
 	for (int i = 0; i < tokens.size(); ++i) {
 		if (tokens[i] == "+") stack.push(stack.pop() + stack.pop());
-		if (tokens[i] == "-") stack.push(stack.pop() - stack.pop());
-		if (tokens[i] == "*") stack.push(stack.pop() * stack.pop());
-		if (tokens[i] == "/") stack.push(stack.pop() / stack.pop());
+		else if (tokens[i] == "-") stack.push(stack.pop() - stack.pop());
+		else if (tokens[i] == "*") stack.push(stack.pop() * stack.pop());
+		else if (tokens[i] == "/") stack.push(stack.pop() / stack.pop());
 		else stack.push(stod(tokens[i]));
 	}
 
