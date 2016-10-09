@@ -19,9 +19,8 @@ int maximumGates(const vector<int> & arrives, const vector<int> & departs) {
 
 	for (int i = 0; i < getLatestDepart(departs); ++i) {
 		for (int i = 0; i < arrives.size(); ++i) {
-			if (i == arrives[i]) {
-				++gates;
-			}
+			if (i == arrives[i]) ++gates;
+			if (i == departs[i]) --gates;
 		}
 	}
 }
