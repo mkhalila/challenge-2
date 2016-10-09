@@ -20,7 +20,9 @@ public:
 		return toPop;
 	}
 
-	void push(const double & toPush) {}
+	void push(const double & toPush) {
+		stack.insert(stack.begin(), toPush);
+	}
 };
 
 
