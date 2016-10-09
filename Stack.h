@@ -2,7 +2,9 @@
 #define STACK_H
 
 #include "vector.h"
+#include <string>
 using pep::vector;
+using std::string;
 
 // TODO: Your code for question 3 goes here
 class Stack {
@@ -24,6 +26,8 @@ public:
 		stack.insert(stack.begin(), toPush);
 	}
 };
+
+double evaluate(const string & rpn) {}
 
 
 // Do not write anything below this line
