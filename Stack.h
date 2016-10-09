@@ -14,7 +14,11 @@ public:
 		return stack.size() == 0;
 	}
 
-	double pop() {}
+	double pop() {
+		double toPop = stack[0];
+		stack.erase(stack.begin());
+		return toPop;
+	}
 
 	void push(const double & toPush) {}
 };
