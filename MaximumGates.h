@@ -4,6 +4,14 @@
 #include <vector>
 using std::vector;
 
+int getLatestDepart(const vector<int> & departs) {
+	int latest = 0;
+	for (int i = 0; i < departs.size(); ++i) {
+		if (departs[i] > latest) latest = departs[i];		
+	}
+	return latest;
+}
+
 // TODO: Your answer for question 2 goes here
 int maximumGates(const vector<int> & arrives, const vector<int> & departs) {
 	int gates = 0;
