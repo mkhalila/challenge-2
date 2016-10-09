@@ -55,6 +55,8 @@ double evaluate(const string & rpn) {
 		if (tokens[i] == "/") stack.push(stack.pop() / stack.pop());
 		else stack.push(stod(tokens[i]));
 	}
+
+	return stack.pop();
 }
 
 
