@@ -5,10 +5,7 @@
 using std::vector;
 
 // TODO: Your answer for question 2 goes here
-
-
-
-
+int maximumGates(const vector<int> & arrives, const vector<int> & departs) {}
 
 // Do not write any code below this line
 
