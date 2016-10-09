@@ -22,6 +22,7 @@ int maximumGates(const vector<int> & arrives, const vector<int> & departs) {
 			if (i == arrives[i]) ++gates;
 			if (i == departs[i]) --gates;
 		}
+		if (gates > maxGates) maxGates = gates;
 	}
 }
 
