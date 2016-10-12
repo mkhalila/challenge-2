@@ -25,6 +25,8 @@ int howManyWaysToMake(const int & total, const vector<int> & coins) {
 	if (total == 0) {
 		return 1;
 	}
+
+	return howManyWaysToMake(total, coins) + howManyWaysToMake(total - coins[coins.size() - 1], coins);
 }
 
 
