@@ -21,6 +21,10 @@ int howManyWaysToMake(const int & total, const vector<int> & coins) {
 	if (coins.size() < 1 || total < 0) {
 		return 0;
 	}
+
+	if (total == 0) {
+		return 1;
+	}
 }
 
 
