@@ -18,13 +18,9 @@ int howManyWaysToMake(const int & total, const vector<int> & coins) {
 	// written by Andrew Neitsch:
 	// https://andrew.neitsch.ca/publications/m496pres1.nb.pdf
 
-	if (coins.size() < 1 || total < 0) {
-		return 0;
-	}
+	if (coins.size() < 1 || total < 0) return 0;
 
-	if (total == 0) {
-		return 1;
-	}
+	if (total == 0) return 1;
 
 	vector<int> copy = coins;
 	copy.resize(coins.size() - 1);
