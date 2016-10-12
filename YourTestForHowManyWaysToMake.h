@@ -13,10 +13,10 @@ int testHowManyWaysToMake() {
     const int possibilities = howManyWaysToMake(124, {5, 4, 3, 2, 1});
     
     if (possibilities == 103664) {
-        cout << "1) Pass: code correctly returns that there are 103664 ways to make 9 out of {1}\n";     
+        cout << "1) Pass: code correctly returns that there are 103664 ways to make 124 out of {5, 4, 3, 2, 1}\n";     
         return 0;
     } else {
-        cout << "1) Fail: code returns that there are " << possibilities << " ways to make 9 out of {1} -- but the answer is 103664\n";     
+        cout << "1) Fail: code returns that there are " << possibilities << " ways to make 124 out of {5, 4, 3, 2, 1} -- but the answer is 103664\n";     
         return 1;
     }
     
