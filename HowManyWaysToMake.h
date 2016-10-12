@@ -7,6 +7,9 @@ using std::vector;
 // TODO: Your answer for question 1a goes here
 
 int howManyWaysToMake(const int & total, const vector<int> & coins) {
+
+	if (coins.size() == 0) return 0;
+	
 	//Create a table using vectors, with a row for every coin
 	vector< vector<int> > table(coins.size());
 
@@ -20,6 +23,8 @@ int howManyWaysToMake(const int & total, const vector<int> & coins) {
     for (int i = 0; i < total; ++i) {
         table[0][i] = 1;
     }
+
+
 
 }
 
