@@ -9,6 +9,8 @@ using std::vector;
 int howManyWaysToMake(const int & total, const vector<int> & coins) {
 
 	if (coins.size() == 0) return 0;
+
+	if (total == 0) return 1;
 	
 	//Create a table using vectors, with a row for every coin
 	vector< vector<int> > table(coins.size());
