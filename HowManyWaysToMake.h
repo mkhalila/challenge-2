@@ -3,7 +3,9 @@
 
 // TODO: Your answer for question 1a goes here
 
+int howManyWaysToMake(const int & target, const vector<int> & coins) {
 
+}
 
 
 // Do not write any code below this line
