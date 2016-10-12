@@ -17,6 +17,10 @@ int howManyWaysToMake(const int & total, const vector<int> & coins) {
 	// The code below was written by me, using the above formula which I extracted from the following Mathematical paper
 	// written by Andrew Neitsch:
 	// https://andrew.neitsch.ca/publications/m496pres1.nb.pdf
+
+	if (coins.size() < 1 || total < 0) {
+		return 0;
+	}
 }
 
 
