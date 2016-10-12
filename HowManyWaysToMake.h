@@ -9,6 +9,13 @@ using std::vector;
 int howManyWaysToMake(const int & target, const vector<int> & coins) {
 	//Create a table using vectors, with a row for every coin
 	vector< vector<int> > table(coins.size());
+
+	//1 way to make 0 for every coin
+	for (int i = 0; i < table.size(); ++i) {
+        table[i] = vector<int>(target);
+        table[i][0] = 1;
+    }
+
 }
 
 
